@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Byebyemyfriend</title>
+<head>
+    <link rel="stylesheet" href="30501styles.css">
+
+</head>
+
+<body>
+    <div class="container">
+    
+<div>
+            <h1 class="header_text">ทุกคนจะจำหัวหน้าคนนี้</h1>
+            <h1 class="header_text">และให้อภัยในทุกๆสิ่งที่ทำมาใช่ไหม</h1>
+        <div class="img">
+            <img src="https://media.discordapp.net/attachments/832591437135609866/1208322783721824288/427948869_411323628074670_221603998272041044_n.webp?ex=65e2dd49&is=65d06849&hm=4e58c2b16831fea9a8bd5d70c833eeda48415e2d8ecc8f6df5e047395da0bf95&=&format=webp&width=541&height=676"
+                alt="Cute animated illustration" width="500" height="500">
+        </div>
+    <div class="buttons">
+            <button class="btn" id="yesButton" onclick="nextPage()">ช่าย</button>
+            <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">ม่าย</button>
+            <script>
+                function nextPage() {
+                    window.location.href = "305 หน้า2.html";
+                }
+
+                function moveButton() {
+                    var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 85;
+                    var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 48;
+                    document.getElementById('noButton').style.left = `${x}px`;
+                    document.getElementById('noButton').style.top = `${y}px`;
+                }
+            </script>
+    </div>
+</div>
+
+</body>
+
+</html>
